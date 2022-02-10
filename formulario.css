@@ -1,0 +1,78 @@
+/* Todos os elementos da página */
+* {
+    margin: 2;
+    padding: 2;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: Luminari, fantasy;
+    color: #216651;
+    margin-left: 7%;
+}
+
+/*Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color:#74BAA0 ;
+    margin-left: 15%;
+}
+
+/* Elemento de tag <body> */
+body{
+background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: #3E9278;
+    margin-left: 30%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+/* Elemento de tag <h2>*/
+h2{
+    font-family:Georgia, serif;
+    color: #216651;
+    }
+/* Elemento de tag <input, textarea> */
+input, textarea {
+    font-family: sans-serif;
+    color:#41634A ;
+}
+
+#check{
+    display: inline-block;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #41634A;
+    border-radius: 10px;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* elemento textarea */
+textarea{
+    display: block ;
+    border: 2px solid ;
+}
+
+/*Elemento button "enviar"*/
+button{
+    font-family: sans-serif;
+    color: #41634A;
+    margin: 3%;
+    margin-left: 31%;
+    border: 2px outset #9BB294;
+    font-size: 20px;
+}
+

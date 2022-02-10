@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--conexão com CSS-->
+		<link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+		<!-- titulo da página que aparece na aba -->
+		<title>Controle de casos clinicos</title>
+
+	</head>
+
+	<body>
+
+		<h1 id="titulo">Controle de Casos Clínicos</h1>
+		<p id="subtitulo">Insira os dados do paciente</p> 
+		<br>
+
+		<!-- inicio do formulário -->
+		<form>
+
+			<!-- Dados do profissional que está realizando o atendimento-->	
+			<div>
+				<label for="nome"><strong>Profissional Responsável*</strong></label><br>
+				<input type="text" name="profissional" required>
+			</div>
+			<div>
+				<label for="date"><strong>Data do atendimento</strong></label><br>
+				<input type="date" name="data do atendimento">
+				<input type="time" name="hora">
+			</div>
+			<!--Dados do tutor-->
+			<div>
+				<label for="nome"><strong>Tutor*</strong></label><br>
+				<input type="text" name="Tutor" placeholder="Nome" required>
+				<input type="text" name="email" placeholder="Sobrenome" required>
+			</div>
+			<div>
+				<label for="email"><strong>Email Tutor*</strong></label><br>
+				<input type="email" name="email" required >
+			</div>
+			
+			<!-- Dados do paciente -->
+			<h2>Dados do Paciente</h2>
+
+			<div>
+				<label for="nome"><strong>Nome*</strong></label><br>
+				<input type="text" name="paciente" required> <br>
+			</div>
+			<div>
+				<label for="nome"><strong>Espécie*</strong></label><br>
+				<input type="text" name="espécie" required>
+			</div>
+			<div>
+				<label for="Raça"><strong>Raça*</strong></label><br>
+				<input type="text" name="Raça" required>
+			</div>
+			<div>
+				<label for="date"><strong>Data de nascimento/Resgate</strong></label><br>
+				<input type="date" name="data de nascimento">
+				<input type="number" name="idade" placeholder="Idade">
+			</div>
+			<div>
+				<label for="Sexo"><strong>Sexo</strong></label><br>
+				<select name="Sexo">
+					<option value="Macho">Macho</option>
+					<option value="Fêmea">Fêmea</option>
+				</select>
+			</div>
+			<div>
+				<label for="peso"><strong>Peso*</strong></label><br>
+				<input type="text" name="peso" placeholder="Kg" required>
+			</div>
+			<div>
+				<label for="nome"><strong>Castrado(a)?</strong></label><br>
+				<select name="castrado">
+					<option value="S">Sim</option>
+					<option value="N">Não</option>
+				</select>
+			</div>
+
+			<!--Inicio do formulário de anamnese-->
+			<h2>Anamnese</h2>
+			<div>
+				<label for="temperatura"><strong>Temperatura</strong></label><br>
+				<input type="number" name="temperatura" placeholder="&#8451;
+">
+			</div>
+			<div>
+				<label for="FR"><strong>Frequência Respiratória</strong></label><br>
+				<input type="number" name="FR" value="number" placeholder="FR">
+			</div>
+			<div>
+				<label for="FC"><strong>Frequência Cardíaca</strong></label><br>
+				<input type="number" name="FC" placeholder="FC">
+			</div>
+			<div>
+				<label for="ouvido"><strong>Ouvidos</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="olhos"><strong>Olhos</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="Mucosas"><strong>Mucosas</strong></label><br>
+				<select name="mucosas">
+					<option value="normocoradas">Normocoradas</option>
+					<option value="hipocoradas">Hipocoradas</option>
+					<option value="cianótica">Cianótica</option>
+					<option value="ictérica">Ictérica</option>
+					<option value="congesta">Congesta</option>
+				</select>
+			</div>
+			<div>
+				<label for="TPC"><strong>Tempo de Preenchimento Capilar</strong></label><br>
+				<input type="segundos" name="TPC" placeholder="TPC">
+			</div>
+			<div>
+				<label for="desidratação"><strong>Nível de Desidratação</strong></label><br>
+				<select name="desidratação">
+					<option value="<5%"><5% (muito suave/normal)</option>
+					<option value="5 - 6%">5 - 6% (suave)</option>
+					<option value="6 - 8%">6 - 8% (moderada)</option>
+					<option value="10 - 12%">10 - 12% (severa)</option>
+					<option value="12 - 15%">12 - 15% (choque e óbito)</option>
+				</select>
+			</div>
+			<div>
+				<label for="fezes"><strong>Fezes</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="urina"><strong>Urina</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="principal queixa"><strong>Principal Queixa</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label form="Sintomas"><strong>Sintomas Clinicos</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="procedimento"><strong>Procedimentos Ambulatórios</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="exames"><strong>Exames solicitados</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="Suspeita"><strong>Suspeita Clínica/disgnóstico</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<div>
+				<label for="tratamento"><strong>Tratamento</strong></label><br>
+				<textarea></textarea>
+			</div>
+			<button>Enviar</button>
+
+		</form>
+
+	</body>
+</html>
